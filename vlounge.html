@@ -1,0 +1,669 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <style>
+      .navbar {
+    margin-bottom:15px;
+    background-color: black;
+    z-index: 9999;
+    border: 0;
+    font-size: 20px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 1px;
+    border-radius: 0;
+
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  color: white;
+  height: 100%;
+  padding: 0px;
+  width: 100%;
+
+}
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+
+}
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: black !important;
+    background-color:white !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+    margin:0;
+}
+.footer {
+    background-color: black;
+    height: 8%;
+    margin-bottom: 0;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+}
+
+.footer-text {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 12px;
+}
+.parallax {
+    /* The image used */
+    background-image: url("vit2.jpg");
+
+    /* Set a specific height */
+    min-height: 200px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax1 {
+    /* The image used */
+    background-image: url("vit2.jpg");
+
+    /* Set a specific height */
+    min-height: 700px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card-img-top {
+    width: 100%;
+    object-fit: cover;
+    height: 12vw;
+}
+.card-title{
+  text-align: center;
+  font-size: 25px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width:350px;
+    height: 350px;
+    border-radius: 10px;
+    background-color:white;
+    padding-top: 65px;
+    border-color: black;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.img {
+    border-radius: 5px 5px 0 0;
+}
+
+.container {
+    padding: 2px 16px;
+  }
+.container-fluid{
+  background-image:"vit.png"
+}
+.btn{
+  background-color: black;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 12px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 9px #999;
+}
+.btn:hover {background-color:white;
+  color:black;
+}
+.btn-block:hover {background-color:green;
+  color: white;
+}
+.modal-header, h4, .close {
+    background-color:black;
+    color: #fff !important;
+    text-align: center;
+    font-size: 30px;
+}
+
+.modal-header, .modal-body {
+    padding: 40px 50px;
+}
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color:black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    color: black;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: block;
+    background-color:  black;
+    font-size: 18px;
+
+}
+
+.dropdown-menu a:hover {background-color:white;}
+
+.dropdown:hover .dropdown-menu {display: block;}
+.qty .count,.qty .count1,.qty .count2,.qty .count3,.qty .count4,.qty .count5,.qty .count6,.qty .count7{
+    color: #000;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    padding: 3 4px;
+    min-width: 20px;
+    text-align: center;
+}
+.qty .plus,.qty .plus1,.qty .plus2,.qty .plus3,.qty .plus4,.qty .plus5,.qty .plus6,.qty .plus7 {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    width: 20px;
+    height: 20px;
+    font: 20px/1 Arial,sans-serif;
+    text-align: center;
+    border-radius: 50%;
+    background-color:black;
+    }
+.qty .minus,.qty .minus1,.qty .minus2,.qty .minus3,.qty .minus4,.qty .minus5,.qty .minus6,.qty .minus7 {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    width: 20px;
+    height: 20px;
+    font: 20px/1 Arial,sans-serif;
+    text-align: center;
+    border-radius: 50%;
+    background-clip: padding-box;
+    background-color: black;
+}
+.qty ,.mt-5 {
+    padding-right: 8px;
+    text-align: right;
+}
+.minus:hover,.minus1:hover,.minus2:hover,.minus3:hover,.minus4:hover,.minus5:hover,.minus6:hover,.minus7:hover{
+    background-color: white !important;
+    color: black;
+    border-color: black;
+}
+.plus:hover,.plus1:hover,.plus2:hover,.plus3:hover,.plus4:hover,.plus5:hover,.plus6:hover,.plus7:hover{
+    background-color: white !important;
+    color: black;
+    border-color: black;
+}
+/*Prevent text selection*/
+span{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    font-size: 20px;
+}
+input{
+    border: 0;
+    width: 2%;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input:disabled{
+    background-color:white;
+}
+.row{
+  margin-bottom: 15px;
+}
+.badge-notify{
+    background:red;
+    position:relative;
+    top: -20px;
+    right: 10px;
+  }
+  .my-cart-icon-affix {
+    position: fixed;
+    z-index: 999;
+  }
+</style>
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <img src="http://mailtranscripts.com/Images/imgs/vidyalankar_institute_logo.jpg" alt="logo" style="width:100px" class="img-rounded" class="img-responsive"  >
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="a_block.html"><span class="glyphicon glyphicon-education"></span>A-Block</a></li>
+        <li class="active"><a href="vlounge.html"><span class="glyphicon glyphicon-cutlery"></span>V-Lounge</a></li>
+        <li><a href="stationary.html"><span class="glyphicon glyphicon-print"> </span>Stationary</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"> </span>Account</a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href=project.html>Logout    <span class="glyphicon glyphicon-log-out"></span></a></li>
+            </ul>
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart my-cart-icon"><span class="badge badge-notify my-cart-badge"></span></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="parallax1">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="card">
+      <div class="card-body">
+        <img class="card-img-top" src="idli.jpg" alt="Card image">
+        <h5 class="card-title">Idli/Wada</h5>
+        <p align="right">
+          <div class="qty mt-5">
+                          <span class="minus bg-dark">-</span>
+                          <input type="number" class="count" name="qty" value="0">
+                          <span class="plus bg-dark bg-dark my-cart-btn" data-id="1" data-name="Idli/Wada" data-summary="summary 1" data-price="10" data-quantity="1" data-image="idli.jpg">+</span>
+          </div>
+          <br>
+
+
+      </p>
+      <br>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+    <div class="card-body">
+      <img class="card-img-top" src="dosa.jpg" alt="Card image">
+      <h5 class="card-title">Dosa</h5>
+      <p align="right">
+        <div class="qty mt-5">
+                        <span class="minus1 bg-dark">-</span>
+                        <input type="number" class="count1" name="qty" value="0">
+                        <span class="plus1 bg-dark my-cart-btn" data-id="2" data-name="Dosa" data-summary="summary 2" data-price="10" data-quantity="1" data-image="dosa.jpg">+</span>
+                    </div>
+      <br>
+    </p>
+    <br>
+    </div>
+  </div>
+</div>
+<div class="col-sm-3">
+  <div class="card">
+  <div class="card-body">
+    <img class="card-img-top" src="coffee.jpg" alt="Card image">
+    <h5 class="card-title">Coffee</h5>
+    <p align="right">
+      <div class="qty mt-5">
+                      <span class="minus2 bg-dark">-</span>
+                      <input type="number" class="count2" name="qty" value="0">
+                      <span class="plus2 bg-dark bg-dark my-cart-btn" data-id="3" data-name="Coffee" data-summary="summary3 " data-price="10" data-quantity="1" data-image="coffee.jpg">+</span>
+                  </div>
+    <br>
+  </p>
+  <br>
+  </div>
+</div>
+</div>
+<div class="col-sm-3">
+  <div class="card">
+  <div class="card-body">
+    <img class="card-img-top" src="sandwich.jpg" alt="Card image">
+    <h5 class="card-title">Sandwich</h5>
+    <p align="right">
+      <div class="qty mt-5">
+                      <span class="minus3 bg-dark">-</span>
+                      <input type="number" class="count3" name="qty" value="0">
+                      <span class="plus3 bg-dark bg-dark my-cart-btn" data-id="4" data-name="Sandwich" data-summary="summary 4" data-price="10" data-quantity="1" data-image="Sandwich.jpg">+</span>
+                  </div>
+    <br>
+  </p>
+  <br>
+  </div>
+</div>
+</div>
+
+
+</div>
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="card">
+      <div class="card-body">
+        <img class="card-img-top" src="upma.jpg" alt="Card image">
+        <h5 class="card-title">Upma</h5>
+        <p align="right">
+          <div class="qty mt-5">
+                          <span class="minus4 bg-dark">-</span>
+                          <input type="number" class="count4" name="qty" value="0">
+                          <span class="plus4 bg-dark bg-dark my-cart-btn" data-id="5" data-name="Upma" data-summary="summary 5" data-price="10" data-quantity="1" data-image="upma.jpg">+</span>
+                      </div>
+        <br>
+      </p>
+      <br>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="card">
+    <div class="card-body">
+      <img class="card-img-top" src="poha.jpg" alt="Card image">
+      <h5 class="card-title">Poha</h5>
+      <p align="right">
+        <div class="qty mt-5">
+                        <span class="minus5 bg-dark">-</span>
+                        <input type="number" class="count5" name="qty" value="0">
+                        <span class="plus5 bg-dark bg-dark my-cart-btn" data-id="6" data-name="Poha" data-summary="summary 6" data-price="10" data-quantity="1" data-image="poha.jpg">+</span>
+                    </div>
+      <br>
+    </p>
+    <br>
+    </div>
+  </div>
+</div>
+<div class="col-sm-3">
+  <div class="card">
+  <div class="card-body">
+    <img class="card-img-top" src="samosa.jpg" alt="Card image">
+    <h5 class="card-title">Samosa</h5>
+      <div class="qty mt-5">
+                      <span class="minus6 bg-dark">-</span>
+                      <input type="number" class="count6" name="qty" value="0">
+                      <span class="plus6 bg-dark bg-dark my-cart-btn" data-id="7" data-name="Samosa" data-summary="summary 7" data-price="10" data-quantity="1" data-image="samosa.jpg">+</span>
+                  </div>
+    <br>
+  </p>
+  <br>
+  </div>
+</div>
+</div>
+<div class="col-sm-3">
+  <div class="card">
+  <div class="card-body">
+    <img class="card-img-top" src="lassi.jpg" alt="Card image">
+    <h5 class="card-title">Lassi</h5>
+    <p align="right">
+      <p align="right">
+      <div class="qty mt-5">
+                      <span class="minus7 bg-dark">-</span>
+                      <input type="number" class="count7" name="qty" value="0">
+                      <span class="plus7 bg-dark bg-dark my-cart-btn" data-id="8" data-name="Lassi" data-summary="summary 8" data-price="10" data-quantity="1" data-image="lassi.jpg">+</span>
+                  </div>
+    <br>
+  </p>
+  <br>
+  </div>
+</div>
+</div>
+
+  </div>
+</div>
+</div>
+<div class="footer navbar-fixed-bottom">
+         <p class="footer-text">Copyright© Built by vaishya</p>
+      </div>
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4><i class="fa fa-cc-visa" style="font-size:36px"></i>  Payment</h4>
+      </div>
+      <div class="modal-body">
+        <form role="form">
+          <div class="form-group">
+            <label for="psw"><i class="material-icons" style="font-size:17px">account_box</i>Enter your Roll no:</label>
+            <input type="text" class="form-control" id="psw" placeholder="16101A0050">
+          </div>
+          <div class="form-group">
+            <label for="usrname"><i class="fa fa-inr" style="font-size:20px"></i>Amount</label>
+            <input type="text" class="form-control" id="usrname" placeholder="Enter in Rs.">
+          </div>
+          <button type="submit" class="btn btn-block">Pay
+            <span class="glyphicon glyphicon-ok"></span>
+          </button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+          <span class="glyphicon glyphicon-remove"></span> Cancel
+        </button>
+        <p>Need <a href="#">help?</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.count').prop('disabled', true);
+  $(document).on('click','.plus',function(){
+  $('.count').val(parseInt($('.count').val()) + 1 );
+  });
+    $(document).on('click','.minus',function(){
+    $('.count').val(parseInt($('.count').val()) - 1 );
+      if ($('.count').val() == -1) {
+      $('.count').val(0);
+    }
+      });
+});
+/*----1*/
+$(document).ready(function(){
+  $('.count1').prop('disabled', true);
+  $(document).on('click','.plus1',function(){
+  $('.count1').val(parseInt($('.count1').val()) + 1 );
+  });
+    $(document).on('click','.minus1',function(){
+    $('.count1').val(parseInt($('.count1').val()) - 1 );
+      if ($('.count1').val() == -1) {
+      $('.count1').val(0);
+    }
+      });
+});
+
+/*----2*/
+$(document).ready(function(){
+  $('.count2').prop('disabled', true);
+  $(document).on('click','.plus2',function(){
+  $('.count2').val(parseInt($('.count2').val()) + 1 );
+  });
+    $(document).on('click','.minus2',function(){
+    $('.count2').val(parseInt($('.count2').val()) - 1 );
+      if ($('.count2').val() == -1) {
+      $('.count2').val(0);
+    }
+      });
+});
+
+/*----3*/
+$(document).ready(function(){
+  $('.count3').prop('disabled', true);
+  $(document).on('click','.plus3',function(){
+  $('.count3').val(parseInt($('.count3').val()) + 1 );
+  });
+    $(document).on('click','.minus3',function(){
+    $('.count3').val(parseInt($('.count3').val()) - 1 );
+      if ($('.count3').val() == -1) {
+      $('.count3').val(0);
+    }
+      });
+});
+/*----4*/
+$(document).ready(function(){
+  $('.count4').prop('disabled', true);
+  $(document).on('click','.plus4',function(){
+  $('.count4').val(parseInt($('.count4').val()) + 1 );
+  });
+    $(document).on('click','.minus4',function(){
+    $('.count4').val(parseInt($('.count4').val()) - 1 );
+      if ($('.count4').val() == -1) {
+      $('.count4').val(0);
+    }
+      });
+});
+/*----5*/
+$(document).ready(function(){
+  $('.count5').prop('disabled', true);
+  $(document).on('click','.plus5',function(){
+  $('.count5').val(parseInt($('.count5').val()) + 1 );
+  });
+    $(document).on('click','.minus5',function(){
+    $('.count5').val(parseInt($('.count5').val()) - 1 );
+      if ($('.count5').val() == -1) {
+      $('.count5').val(0);
+    }
+      });
+});
+/*----6*/
+$(document).ready(function(){
+  $('.count6').prop('disabled', true);
+  $(document).on('click','.plus6',function(){
+  $('.count6').val(parseInt($('.count6').val()) + 1 );
+  });
+    $(document).on('click','.minus6',function(){
+    $('.count6').val(parseInt($('.count6').val()) - 1 );
+      if ($('.count6').val() == -1) {
+      $('.count6').val(0);
+    }
+      });
+});
+
+/*----7*/
+$(document).ready(function(){
+  $('.count7').prop('disabled', true);
+  $(document).on('click','.plus7',function(){
+  $('.count7').val(parseInt($('.count7').val()) + 1 );
+  });
+    $(document).on('click','.minus7',function(){
+    $('.count7').val(parseInt($('.count7').val()) - 1 );
+      if ($('.count7').val() == -1) {
+      $('.count7').val(0);
+    }
+      });
+});
+</script>
+
+
+<script src="js/jquery-2.2.3.min.js"></script>
+  <script type='text/javascript' src="js/bootstrap.min.js"></script>
+  <script type='text/javascript' src="js/jquery.mycart.js"></script>
+  <script type="text/javascript">
+  $(function () {
+
+    var goToCartIcon = function($addTocartBtn){
+      var $cartIcon = $(".my-cart-icon");
+      var $image = $('<img width="30px" height="30px" src="' + $addTocartBtn.data("image") + '"/>').css({"position": "fixed", "z-index": "999"});
+      $addTocartBtn.prepend($image);
+      var position = $cartIcon.position();
+      $image.animate({
+        top: position.top+10,
+        right: position.right+10
+      }, 500 , "linear", function() {
+        $image.remove();
+      });
+    }
+
+    $('.my-cart-btn').myCart({
+      currencySymbol: 'Rs.',
+      classCartIcon: 'my-cart-icon',
+      classCartBadge: 'my-cart-badge',
+      classProductQuantity: 'my-product-quantity',
+      classProductRemove: 'my-product-remove',
+      classCheckoutCart: 'my-cart-checkout',
+      affixCartIcon: true,
+      showCheckoutModal: true,
+      numberOfDecimals: 2,
+      cartItems: [
+
+      ],
+      clickOnAddToCart: function($addTocart){
+        goToCartIcon($addTocart);
+      },
+      afterAddOnCart: function(products, totalPrice, totalQuantity) {
+        console.log("afterAddOnCart", products, totalPrice, totalQuantity);
+      },
+      clickOnCartIcon: function($cartIcon, products, totalPrice, totalQuantity) {
+        console.log("cart icon clicked", $cartIcon, products, totalPrice, totalQuantity);
+      },
+      checkoutCart: function(products, totalPrice, totalQuantity) {
+        var checkoutString = "Total Price: " + totalPrice + "\nTotal Quantity: " + totalQuantity;
+        checkoutString += "\n\n id \t name \t summary \t price \t quantity \t image path";
+        $.each(products, function(){
+          checkoutString += ("\n " + this.id + " \t " + this.name + " \t " + this.summary + " \t " + this.price + " \t " + this.quantity + " \t " + this.image);
+        });
+        alert(checkoutString)
+        console.log("checking out", products, totalPrice, totalQuantity);
+      },
+      getDiscountPrice: function(products, totalPrice, totalQuantity) {
+        console.log("calculating discount", products, totalPrice, totalQuantity);
+        return totalPrice * 0.5;
+      }
+    });
+
+    $("#addNewProduct").click(function(event) {
+      var currentElementNo = $(".row").children().length + 1;
+      $(".row").append('<div class="col-md-3 text-center"><img src="images/img_empty.png" width="150px" height="150px"><br>product ' + currentElementNo + ' - <strong>$' + currentElementNo + '</strong><br><button class="btn btn-danger my-cart-btn" data-id="' + currentElementNo + '" data-name="product ' + currentElementNo + '" data-summary="summary ' + currentElementNo + '" data-price="' + currentElementNo + '" data-quantity="1" data-image="images/img_empty.png">Add to Cart</button><a href="#" class="btn btn-info">Details</a></div>')
+    });
+  });
+  </script>
+
+  </body>
+
+</html>

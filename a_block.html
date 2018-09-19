@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <style>
+      .navbar {
+    margin-bottom: 0;
+    background-color: black;
+    z-index: 9999;
+    border: 0;
+    font-size: 20px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 1px;
+    border-radius: 0;
+
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  color: white;
+  height: 100%;
+  padding: 0px;
+  width: 100%;
+
+}
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+
+}
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: black !important;
+    background-color:white !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+.footer {
+    background-color: black;
+    height: 8%;
+    margin-bottom: 0;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+}
+
+.footer-text {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 12px;
+}
+.parallax {
+    /* The image used */
+    background-image: url("vit2.jpg");
+
+    /* Set a specific height */
+    min-height: 200px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax1 {
+    /* The image used */
+    background-image: url("vit2.jpg");
+
+    /* Set a specific height */
+    min-height: 700px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card-img-top {
+    width: 100%;
+    object-fit: cover;
+    height: 25vw;
+}
+.card-title{
+  text-align: center;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    border-radius: 10px;
+    background-color: white;
+    padding-top: 65px;
+    border-color: black;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.img {
+    border-radius: 5px 5px 0 0;
+}
+
+.container {
+    padding: 2px 16px;
+  }
+.container-fluid{
+  background-image:"vit.png"
+}
+.btn{
+  background-color: black;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.btn:hover {background-color:white;
+  color:black;
+}
+.btn-block:hover {background-color:green;
+  color: white;
+}
+.carousel-inner img {
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(90%); /* make all photos black and white */
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+}
+
+.carousel-caption h3 {
+    color: #fff !important;
+}
+
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+}
+
+.modal-header, h4, .close {
+    background-color:black;
+    color: #fff !important;
+    text-align: center;
+    font-size: 30px;
+}
+
+.modal-header, .modal-body {
+    padding: 40px 50px;
+}
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color:black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    color: black;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: block;
+    background-color:  black;
+    font-size: 18px;
+
+}
+
+.dropdown-menu a:hover {background-color:white;}
+
+.dropdown:hover .dropdown-menu {display: block;}
+
+
+</style>
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://vit.edu.in">
+        <img src="http://mailtranscripts.com/Images/imgs/vidyalankar_institute_logo.jpg" alt="logo" style="width:100px" class="img-rounded" class="img-responsive"  >
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="a_block.html"><span class="glyphicon glyphicon-education"></span>A-Block</a></li>
+        <li><a href="vlounge.html"><span class="glyphicon glyphicon-cutlery"></span>V-Lounge</a></li>
+        <li><a href="stationary.html"><span class="glyphicon glyphicon-print"> </span>Stationary</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"> </span>Account</a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href=login.html>Logout    <span class="glyphicon glyphicon-log-out"></span></a></li>
+            </ul>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="parallax1">
+<div class="container-fluid">
+  <div class="row-is-table-row">
+    <div class="col-md-4">
+      <div class="card" style="width:400px">
+      <div class="card-body">
+        <img class="card-img-top" src="ablock.jpg" alt="Card image">
+        <h3 class="card-title"><b>College Fees</b></h3>
+        <p align="center">
+        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Make Payment</a>
+        <br>
+      </p>
+      <br>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card" style="width:400px">
+    <div class="card-body">
+      <img class="card-img-top" src="vprint.jpg" alt="Card image">
+      <h3 class="card-title"><b>V-print</b></h3>
+      <p align="center">
+      <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Make Payment</a>
+      <br>
+    </p>
+    <br>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="card" style="width:400px">
+  <div class="card-body">
+    <img class="card-img-top" src="acm.png" alt="Card image">
+    <h3 class="card-title"><b>Student Chapter</b></h3>
+    <p align="center">
+    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Make Payment</a>
+    <br>
+  </p>
+  <br>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</div>
+<div class="footer navbar-fixed-bottom">
+         <p class="footer-text">Copyright© Built by vaishya</p>
+      </div>
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4><i class="fa fa-cc-visa" style="font-size:36px"></i>  Payment</h4>
+      </div>
+      <div class="modal-body">
+        <form role="form">
+          <div class="form-group">
+            <label for="psw"><i class="material-icons" style="font-size:17px">account_box</i>Enter your Roll no:</label>
+            <input type="text" class="form-control" id="psw" placeholder="16101A0050">
+          </div>
+          <div class="form-group">
+            <label for="usrname"><i class="fa fa-inr" style="font-size:20px"></i>Amount</label>
+            <input type="text" class="form-control" id="usrname" placeholder="Enter in Rs.">
+          </div>
+          <button type="submit" class="btn btn-block">Pay
+            <span class="glyphicon glyphicon-ok"></span>
+          </button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+          <span class="glyphicon glyphicon-remove"></span> Cancel
+        </button>
+        <p>Need <a href="#">help?</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+  </body>
+</html>
