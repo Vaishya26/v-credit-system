@@ -1,4 +1,4 @@
-# v-credit-system
+# please don't leave systems logged in at college PCs
 It's a way to make the payment systems or printing systems online at college
 Traditionally when a person wants to get a particular food item from canteen he/she has to go to a counter and get into a queue to place order and buy it.
 This website will facilitate online order placing for food items so that user so that the user can place order without physically going to a counter. The placed order will be mailed.
